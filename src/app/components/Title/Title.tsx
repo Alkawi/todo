@@ -10,4 +10,4 @@ function Title({ children }: TitleProps): JSX.Element {
   return <h1 className={styles.title}>{children}</h1>;
 }
 
-export default Title
+export default Title;
