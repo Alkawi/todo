@@ -8,9 +8,8 @@ function App(): JSX.Element {
     const title = todo.title;
     const description = todo.description;
 
-    console.log(title)
+    console.log(title);
     console.log(description);
-    
   }
 
   return (
