@@ -4,10 +4,19 @@ import Title from './components/Title/Title';
 import Form from './components/Form/Form';
 
 function App(): JSX.Element {
+  function handleSubmit(todo) {
+    const title = todo.title;
+    const description = todo.description;
+
+    console.log(title)
+    console.log(description);
+    
+  }
+
   return (
     <div>
       <Title>Hier steht der Titel</Title>
-      <Form />
+      <Form onSubmit={handleSubmit} />
       <ToDo
         isDone={false}
         title={'Schuhe putzen'}
