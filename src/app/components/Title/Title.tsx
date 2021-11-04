@@ -1,5 +1,3 @@
-// component that returns a h1 and displays a title
-// style it to your liking
 import React from 'react';
 import type { ReactNode } from 'react';
 import styles from './Title.module.css';
