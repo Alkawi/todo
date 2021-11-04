@@ -15,7 +15,6 @@ function App(): JSX.Element {
     description: string;
     isDone: boolean;
   }): void {
-  
     const newTodos = todos.slice();
     newTodos.push(todo);
     setTodos(newTodos);
