@@ -1,14 +1,21 @@
-import React, { useState } from 'react';
-import styles from './Counter.module.css';
+import React from 'react';
 
-function Counter(): JSX.Element {
-  const [count, setCount] = useState<number>(0);
+type counterProps = {
+  count: number;
+  onIncrementClick: () => void;
+  onDecrementClick: () => void;
+};
 
+function Counter({
+  count,
+  onIncrementClick,
+  onDecrementClick,
+}: counterProps): JSX.Element {
   return (
     <div>
-      <button onClick={() => setCount(count - 1)}>-</button>
+      <button onClick={onDecrementClick}>-</button>
       <span>{count}</span>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={onIncrementClick}>+</button>
     </div>
   );
 }
