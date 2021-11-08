@@ -4,12 +4,14 @@ import Title from './components/Title/Title';
 
 function App(): JSX.Element {
   return (
-    <Title>Hier steht der Titel</Title>;
+    <div>
+    <Title>Hier steht der Titel</Title>
     <ToDo
       isDone={false}
       title={'Schuhe putzen'}
       description={'Töte die Schuhe'}
     ></ToDo>
+    </div>
   );
 
 export default App;
